@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 export default (props) => {
   const elseChild = props.children.filter((child) => {
     return child.type && child.type.name === "Else";

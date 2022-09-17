@@ -1,5 +1,5 @@
 import If, { Else } from "./if";
-
+// eslint-disable-next-line
 export default (props) => {
   const user = props.user || {};
   return (

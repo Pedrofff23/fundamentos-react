@@ -2,6 +2,7 @@ import React from "react";
 
 import "./App.css";
 
+import IndirectFather from "./components/communication/IndirectFather";
 import DirectFather from "./components/communication/DirectFather"
 import UserInfo from "./components/condicional/UserInfo";
 import EvenOrOdd from "./components/condicional/EvenOrOdd";
@@ -21,7 +22,11 @@ export default () => (
     <h1>React fundaments</h1>
 
     <div className="Cards">
-      <Card title="#09 - Direct Communicatiob" color="rgb(4, 150, 255)">
+      <Card title="#10 - Indirect Communication" color="rgb(4, 150, 255)">
+        <IndirectFather></IndirectFather>
+      </Card>
+      
+      <Card title="#09 - Direct Communication" color="rgb(4, 150, 255)">
         <DirectFather></DirectFather>
       </Card>
 

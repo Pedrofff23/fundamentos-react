@@ -2,6 +2,8 @@ import React from "react";
 
 import "./App.css";
 
+import UserInfo from "./components/condicional/UserInfo";
+import EvenOrOdd from "./components/condicional/EvenOrOdd";
 import ProductsTable from "./components/repetition/ProductsTable";
 import StudentList from "./components/repetition/StudentList";
 import Family from "./components/basics/Family";
@@ -18,6 +20,12 @@ export default () => (
     <h1>React fundaments</h1>
 
     <div className="Cards">
+      <Card title="#08 - Conditional Render" color="#982395">
+        <EvenOrOdd number={20}></EvenOrOdd>
+        <UserInfo user={{name: 'Pedro'}}/>
+        <UserInfo/>
+      </Card>
+
       <Card title="#07 - Repetition Challenge" color="rgb(4, 150, 255)">
         <ProductsTable></ProductsTable>
       </Card>

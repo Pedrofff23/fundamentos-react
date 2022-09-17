@@ -2,6 +2,7 @@ import React from "react";
 
 import "./App.css";
 
+import DirectFather from "./components/communication/DirectFather"
 import UserInfo from "./components/condicional/UserInfo";
 import EvenOrOdd from "./components/condicional/EvenOrOdd";
 import ProductsTable from "./components/repetition/ProductsTable";
@@ -12,7 +13,7 @@ import Card from "./components/layout/Card";
 import Fragment from "./components/basics/Fragment";
 import WithParameter from "./components/basics/WithParameter";
 import Random from "./components/basics/Random";
-import First from "./components/basics/First";
+import First from "./components/basics/First"; 
 
 // eslint-disable-next-line
 export default () => (
@@ -20,10 +21,14 @@ export default () => (
     <h1>React fundaments</h1>
 
     <div className="Cards">
+      <Card title="#09 - Direct Communicatiob" color="rgb(4, 150, 255)">
+        <DirectFather></DirectFather>
+      </Card>
+
       <Card title="#08 - Conditional Render" color="#982395">
         <EvenOrOdd number={20}></EvenOrOdd>
-        <UserInfo user={{name: 'Pedro'}}/>
-        <UserInfo/>
+        <UserInfo user={{ name: "Pedro" }} />
+        <UserInfo />
       </Card>
 
       <Card title="#07 - Repetition Challenge" color="rgb(4, 150, 255)">

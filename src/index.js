@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import ReactDOM from "react-dom";
+import React from 'react'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import WithParameter from './components/basics/WithParameter';
+import First from './components/basics/First';
+
+ReactDOM.render(
+    <div id="app">
+        <First></First>
+        <WithParameter 
+        title="Student Situation" 
+        student ="Pedro"
+        grade={9.3} />
+    </div>,
+    document.getElementById('root')
+)

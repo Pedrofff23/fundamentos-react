@@ -4,7 +4,7 @@ import "./Card.css";
 export default (props) => {
   const cardStyle = {
     // backgroundColor:"#222"
-    backgroundColor: props.color || "#F00",
+    backgroundColor: props.color || "#F00", //If nothing is passed the default color is applied (#F00)
     borderColor: props.color || "#F00",
   };
   return (

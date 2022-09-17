@@ -6,8 +6,8 @@ export default function WithParameter(props) {
             <h2>{props.title}</h2>
             <p>
              {props.student}
-             has grade 
-             <p> { gradeInt } </p>
+            <br /> has grade 
+             <span> { gradeInt } </span>
              and is
              <strong> { status } </strong>
             

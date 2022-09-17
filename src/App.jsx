@@ -2,6 +2,7 @@ import React from "react";
 
 import "./App.css";
 
+import StudentList from "./components/repetition/StudentList";
 import Family from "./components/basics/Family";
 import FamilyMember from "./components/basics/FamilyMember";
 import Card from "./components/layout/Card";
@@ -16,6 +17,9 @@ export default () => (
     <h1>React fundaments</h1>
 
     <div className="Cards">
+      <Card title="#06 - Repetition" color="#0f0">
+        <StudentList></StudentList>
+      </Card>
 
       <Card title="#05 - Component with chindrens" color="#905BF7">
         <Family surname="Santana">

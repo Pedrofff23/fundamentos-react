@@ -1,0 +1,14 @@
+.Counting input {
+    font-size: 1.4rem;
+    width: 60px;
+}
+
+.Counting button {
+    margin: 15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    background-color: #1449D3;
+    color: #fff;
+}

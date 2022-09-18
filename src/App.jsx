@@ -2,6 +2,7 @@ import React from "react";
 
 import "./App.css";
 
+import Mega from "./components/mega/Mega";
 import Counting from "./components/counting/Counting";
 import Input from "./components/form/Input";
 import IndirectFather from "./components/communication/IndirectFather";
@@ -24,6 +25,10 @@ export default () => (
     <h1>React fundaments</h1>
 
     <div className="Cards">
+      <Card title="#13 - Mega" color="#B90063">
+        <Mega></Mega>
+      </Card>
+
       <Card title="#12 - Couting" color="#EB89C1">
         <Counting initialNumber={0}></Counting>
       </Card>

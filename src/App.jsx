@@ -2,8 +2,9 @@ import React from "react";
 
 import "./App.css";
 
+import Input from "./components/form/Input";
 import IndirectFather from "./components/communication/IndirectFather";
-import DirectFather from "./components/communication/DirectFather"
+import DirectFather from "./components/communication/DirectFather";
 import UserInfo from "./components/condicional/UserInfo";
 import EvenOrOdd from "./components/condicional/EvenOrOdd";
 import ProductsTable from "./components/repetition/ProductsTable";
@@ -14,7 +15,7 @@ import Card from "./components/layout/Card";
 import Fragment from "./components/basics/Fragment";
 import WithParameter from "./components/basics/WithParameter";
 import Random from "./components/basics/Random";
-import First from "./components/basics/First"; 
+import First from "./components/basics/First";
 
 // eslint-disable-next-line
 export default () => (
@@ -22,11 +23,15 @@ export default () => (
     <h1>React fundaments</h1>
 
     <div className="Cards">
-      <Card title="#10 - Indirect Communication" color="rgb(4, 150, 255)">
+      <Card title="#11 - Controlled Components" color="#2AEB54">
+        <Input></Input>
+      </Card>
+
+      <Card title="#10 - Indirect Communication" color="#41059E">
         <IndirectFather></IndirectFather>
       </Card>
-      
-      <Card title="#09 - Direct Communication" color="rgb(4, 150, 255)">
+
+      <Card title="#09 - Direct Communication" color="#F64507">
         <DirectFather></DirectFather>
       </Card>
 
